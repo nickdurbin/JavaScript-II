@@ -2,6 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+
 /* 
 
   //Given this problem: 
@@ -57,6 +58,7 @@ multiplyNums(4, 7, (multiply) => {
   console.log(multiply);
 });
 
+<<<<<<< HEAD
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
@@ -66,9 +68,31 @@ function contains(item, list, cb) {
 }
 
 /* STRETCH PROBLEM */
+=======
+// contains checks if an item is present inside of the given array/list.
+// Pass true to the callback if it is, otherwise pass false.
+function contains(item, list, cb) {
+  list.includes(item) ? cb(true) : cb(false);
+};
+>>>>>>> a1dc302a67daa964a9daf195f5b9d04d7ada49cf
 
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
+let value = exists => {
+  console.log(exists);
 }
+
+contains('Notebook', items, value);
+
+// contains('Notebook', items, function(exists) {
+//   console.log(exists);
+// });
+
+
+// /* STRETCH PROBLEM */
+//   // removeDuplicates removes all duplicate values from the given array.
+//   // Pass the duplicate free array to the callback function.
+//   // Do not mutate the original array.
+// function removeDuplicates(array, cb) {
+//   array.filter(duplicate => duplicate === cb.items);
+// }
+
+// console.log(removeDuplicates(items, duplicate));
