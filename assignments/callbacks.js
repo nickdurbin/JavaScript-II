@@ -57,16 +57,20 @@ multiplyNums(4, 7, (multiply) => {
   console.log(multiply);
 });
 
-  // contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
+// contains checks if an item is present inside of the given array/list.
+// Pass true to the callback if it is, otherwise pass false.
 function contains(item, list, cb) {
-  
-  list.includes(item) === cb ? true : false;
+  list.includes(item) ? cb(true) : cb(false);
 };
 
-contains('Notebook', items, function(exists) {
+contains('Book', items, function(exists) {
   console.log(exists);
 });
+
+
+// contains('Notebook', items, function(exists) {
+//   console.log(exists);
+// });
 
 
 // /* STRETCH PROBLEM */
