@@ -2,6 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+
 /* 
 
   //Given this problem: 
@@ -63,10 +64,11 @@ function contains(item, list, cb) {
   list.includes(item) ? cb(true) : cb(false);
 };
 
-contains('Book', items, function(exists) {
+let value = exists => {
   console.log(exists);
-});
+}
 
+contains('Notebook', items, value);
 
 // contains('Notebook', items, function(exists) {
 //   console.log(exists);
