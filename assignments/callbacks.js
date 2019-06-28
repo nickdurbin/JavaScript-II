@@ -57,18 +57,24 @@ multiplyNums(4, 7, (multiply) => {
   console.log(multiply);
 });
 
-// function contains(item, list, cb) {
-//   // contains checks if an item is present inside of the given array/list.
-//   // Pass true to the callback if it is, otherwise pass false.
-//   items.filter(item, list => {
-//     console.log(list);
-//   });
+  // contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
+function contains(item, list, cb) {
+  
+  list.includes(item) === cb ? true : false;
+};
+
+contains('Notebook', items, function(exists) {
+  console.log(exists);
+});
+
+
+// /* STRETCH PROBLEM */
+//   // removeDuplicates removes all duplicate values from the given array.
+//   // Pass the duplicate free array to the callback function.
+//   // Do not mutate the original array.
+// function removeDuplicates(array, cb) {
+//   array.filter(duplicate => duplicate === cb.items);
 // }
 
-/* STRETCH PROBLEM */
-
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
-}
+// console.log(removeDuplicates(items, duplicate));
