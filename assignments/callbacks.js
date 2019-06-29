@@ -74,11 +74,6 @@ let value = exists => {
 
 contains('Notebook', items, value);
 
-// contains('Notebook', items, function(exists) {
-//   console.log(exists);
-// });
-
-
 // /* STRETCH PROBLEM */
 //   // removeDuplicates removes all duplicate values from the given array.
 //   // Pass the duplicate free array to the callback function.

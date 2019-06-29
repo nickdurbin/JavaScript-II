@@ -14,7 +14,6 @@ console.log(newGreeting());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
-
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   
@@ -30,11 +29,22 @@ console.log(newCounter());
 console.log(newCounter());
 console.log(newCounter());
 
-
 // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
   // Return an object that has two methods called `increment` and `decrement`.
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
+
+
+let  num = 0;
+const counterFactory = () => {
+  return {
+    increment: function() { return ++num },
+    decrement: function() { return --num }
+  }  
+};
+
+console.log(counterFactory());
+
 // const counterFactory = () => {
 
 //   let counter = 0;
@@ -61,12 +71,3 @@ console.log(newCounter());
 // };
 
 // console.log(counterFactory());
-
-let  num = 0;
-const counterFactory = () => {
-  return {
-    increment: function() { return ++num },
-    decrement: function() { return --num}
-  }  
-};
-
